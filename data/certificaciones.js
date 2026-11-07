@@ -1,20 +1,3 @@
-// ============================================================
-//  CERTIFICACIONES
-//  Cada elemento se convierte en una card en /certificaciones.
-//
-//  Campos:
-//   titulo       nombre de la certificación (obligatorio)
-//   entidad      quién la emitió (opcional)
-//   periodo      año o fechas (opcional)
-//   descripcion  una o dos frases (opcional)
-//   etiquetas    lista de palabras clave (opcional)
-//   enlace       dónde está el diploma:
-//                  - archivo en /public/diplomas  ->  "/diplomas/excel-basico.pdf"
-//                  - enlace externo               ->  "https://..."
-//                Si lo dejas en "", el botón aparece desactivado.
-//   textoBoton   texto del botón (opcional)
-// ============================================================
-
 export const certificaciones = [
   {
     titulo: "Microsoft Excel",
