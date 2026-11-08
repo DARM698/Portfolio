@@ -68,7 +68,6 @@ export default function ItemCard({ item }) {
             title="Agrega el enlace en la carpeta data"
             className={`${claseBoton} cursor-not-allowed border border-borde text-tenue`}
           >
-            Enlace pendiente
           </span>
         ) : (
           // Sirve tanto para enlaces externos como para archivos de /public
