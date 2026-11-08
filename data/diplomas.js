@@ -39,4 +39,15 @@ export const diplomas = [
     enlace: "https://platzi.com/p/20272175/curso/12544-course/diploma/detalle/",
     textoBoton: "View diploma",
   },
+  {
+    titulo: "Power BI",
+    entidad: "¡Supérate! Hilasal",
+    periodo: "September 11, 2026",
+    descripcion:
+      "Basic management of Power BI, including data analysis, databases, worksheets, charts, DAX formulas.",
+    etiquetas: ["Power BI", "Clases", "Analysis", "Presentations"],
+    estado: "",
+    enlace: "/diplomas/david.png",
+    textoBoton: "View diploma",
+  },
 ];
