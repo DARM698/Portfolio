@@ -17,8 +17,8 @@ export const proyectos = [
   },
   {
     titulo: "Loqalli",
-    entidad: "EXPO-TECH",
-    periodo: "2026",
+    entidad: "EXPO, EXPO-TECH",
+    periodo: "2025-2026",
     descripcion:
       "A platform aimed at sharing the culture of El Salvador with both national and international tourists through short, micro-experiences that create wonderful memories.",
     etiquetas: ["Next.js", "Tailwind CSS", "React", "Supabase", "Verifik", "Prisma"],

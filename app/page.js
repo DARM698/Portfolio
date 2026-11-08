@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Contacto from "@/components/Contacto";
 import Reveal from "@/components/Reveal";
 import TituloAnimado from "@/components/TituloAnimado";
 import { perfil } from "@/data/perfil";
@@ -58,6 +59,11 @@ export default function Inicio() {
           >
             {perfil.frase}
           </p>
+
+          <div className="entrada mt-6" style={{ "--retraso": "580ms" }}>
+            <Contacto />
+          </div>
+
           <div
             className="entrada mt-8 flex flex-wrap gap-3"
             style={{ "--retraso": "650ms" }}
@@ -106,15 +112,32 @@ export default function Inicio() {
         </div>
       </section>
 
-      {/* Sobre mí */}
       <section className="mx-auto max-w-6xl px-5 pt-24">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
-          <TituloAnimado
-            as="h2"
-            className="text-3xl font-bold tracking-tight sm:text-4xl"
-          >
-            About me
-          </TituloAnimado>
+          <div>
+            <TituloAnimado
+              as="h2"
+              className="text-3xl font-bold tracking-tight sm:text-4xl"
+            >
+              About me
+            </TituloAnimado>
+            {perfil.foto && (
+              <Reveal retraso={150} className="mt-8 max-w-xs">
+                <div className="relative">
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-0 translate-x-3 translate-y-3 rounded-md border border-verde/60"
+                  />
+                  <img
+                    src={perfil.foto}
+                    alt={`Photo of ${perfil.nombre}`}
+                    className="relative aspect-[4/5] w-full rounded-md border border-borde-vivo bg-panel-alto object-cover"
+                  />
+                </div>
+              </Reveal>
+            )}
+          </div>
+
           <div className="space-y-5 text-lg leading-relaxed text-tenue">
             {perfil.parrafos.map((p, i) => (
               <Reveal key={p} retraso={i * 120}>
@@ -202,7 +225,7 @@ export default function Inicio() {
                 </span>
                 <span className="text-tenue">{s.texto}</span>
                 <span className="mt-auto pt-4 text-sm text-verde">
-                  {s.cantidad} {s.cantidad === 1 ? "elemento" : "elements"}
+                  {s.cantidad} {s.cantidad === 1 ? "element" : "elements"}
                 </span>
               </Link>
             </Reveal>
