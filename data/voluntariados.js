@@ -6,7 +6,7 @@ export const voluntariados = [
     descripcion:
       "Specialized volunteering in the teaching and practice of basic subjects (Mathematics, Language, Science and Citizenship and Values).",
     etiquetas: ["Effort", "Solidarity"],
-    enlace: "glasswing.jpeg",
+    enlace: "/diplomas/glasswing.jpeg",
     textoBoton: "View",
   },
   {
